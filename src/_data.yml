@@ -1,1 +1,4 @@
-layout: layout.njk
+layout: layouts/main.njk
+language: en
+metas:
+  - site: Blog name

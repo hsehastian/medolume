@@ -1,0 +1,11 @@
+---
+title: Default page title
+language: en
+layout: layouts/main.njk
+---
+<article lang="{{ language }}">
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+    {{ content | safe }}
+</article>
