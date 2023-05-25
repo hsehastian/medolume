@@ -1,4 +1,9 @@
 layout: layouts/main.njk
-language: en
+social_media:
+  - name: Linkedin
+    url: https://www.linkedin.com
+  - name: Facebook
+    url: https://www.facebook.com
 metas:
-  - site: Blog name
+  site: hsehastian
+  lang: en

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ language }}">
+<html lang="{{ metas.lang }}">
 
 <head>
     <meta charset="utf-8" />
@@ -13,55 +13,19 @@
 </head>
 
 <body>
-    <main class="container">
-        <div class="lg:w-8/12 my-12 mx-auto px-10 border-solid border-gray-300 rounded lg:border-2">
+    <div class="container">
+        <div class="lg:w-8/12 mx-auto my-12 px-10 border-solid border-gray-300 rounded lg:border-2">
             <header class="my-5">
                 <h1 class="text-2xl font-semibold text-center underline">
-                    hsehastian
+                    <a href="/">{{ metas.site }}</a>
                 </h1>
             </header>
             <nav class="flex justify-center">
-                <!-- <a href="#" class="px-4 py-2 text-gray-800">&#127968; Home</a> -->
                 <a href="#" class="px-4 py-2 text-gray-800">&#128221; Notes</a>
-                <a href="#" class="px-4 py-2 text-gray-800">&#128222; Contact</a>
+                <a href="/contact" class="px-4 py-2 text-gray-800">&#128222; Contact</a>
             </nav>
             <div class="my-5 text-justify">
-                <!-- {{ content | safe }} -->
-                <section id="intro">
-                    <div>
-                        <h1>🏠 Welcome to My Online Space!</h1>
-                        <br>
-                        <p>
-                            Hi &#128075;, I'm Hery Sehastian, a web developer with over ten years of experience in the
-                            tech industry. Throughout my career, I've had the privilege of working with various
-                            companies and holding different positions within diverse teams.
-                        </p>
-                        <br>
-                        <p>
-                            Over the course of my 12-year journey, I've worked on numerous projects, utilizing a range
-                            of technologies such as Java, Ruby, Go, and JavaScript. However, PHP has always remained my
-                            primary programming language, and I've extensively honed my skills in it.
-                        </p>
-                        <br>
-                        <p>
-                            As I embark on creating this site, I initially contemplated developing a portfolio to
-                            showcase my work. However, I realized that designing it from scratch would consume a
-                            significant amount of time. Therefore, I've decided to combine it with a blog where I can
-                            share my learnings and experiences. Although I'm uncertain about the frequency of my
-                            writing, I'm excited to document my journey and provide valuable insights along the way.
-                        </p>
-                        <br>
-                        <p>
-                            Join me as I delve into the world of web development, share my knowledge, and explore
-                            exciting new technologies. I hope you find my content informative, engaging, and perhaps
-                            even inspiring.
-                        </p>
-                        <br>
-                        <p>
-                            Thank you for visiting, and I look forward to our journey together! &#128522;
-                        </p>
-                    </div>
-                </section>
+                {{ content | safe }}
             </div>
         </div>
         <footer class="mt-5">
@@ -70,7 +34,7 @@
                 <a href="https://lume.land/">Lume</a>
             </p>
         </footer>
-    </main>
+    </div>
 </body>
 
 </html>

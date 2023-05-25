@@ -1,0 +1,12 @@
+---
+layout: layouts/main.njk
+---
+<section class="social-media">
+    <ul>
+        {% for socmed in social_media %}
+        <li>
+            <a href={{ socmed.url }} target="_blank" class="px-4 py-2 text-gray-800">{{ socmed.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
