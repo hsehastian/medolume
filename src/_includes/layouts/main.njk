@@ -14,31 +14,33 @@
 
 <body>
     <div class="container mx-auto">
-        <div class="flex items-center justify-center h-screen">
-            <div class="lg:w-8/12 mx-auto my-12 px-10 border-solid border-gray-300 rounded lg:border-2">
-                <header class="my-5">
-                    <h1 class="text-2xl font-semibold text-center underline">
-                        <a href="/">{{ metas.site }}</a>
-                    </h1>
-                </header>
+        <div class="lg:w-8/12 mx-auto my-12 px-10 border-solid border-gray-300 rounded lg:border-2">
+            <header class="my-5">
+                <h1 class="text-2xl font-semibold text-center underline">
+                    <a href="/">{{ metas.site }}</a>
+                </h1>
+            </header>
 
-                <nav class="flex justify-center">
-                    <a href="#" class="px-4 py-2 text-gray-800">&#128221; Notes</a>
-                    <a href="/contact" class="px-4 py-2 text-gray-800">&#128222; Contact</a>
-                </nav>
+            <nav class="flex justify-center text-base">
+                <a href="#" class="px-4 py-2 text-gray-800">&#128221; Notes</a>
+                <a href="/contact" class="px-4 py-2 text-gray-800">&#128222; Contact</a>
+            </nav>
 
-                <div class="my-5 text-justify">
+            <div class="min-h-[430px]">
+                <div class="my-5 text-lg text-justify">
                     {{ content | safe }}
                 </div>
-
-                <footer class="my-5">
-                    <p class="text-center">
-                        Hery Sehastian &#169;2023 - Build with
-                        <a href="https://lume.land/">Lume</a>
-                    </p>
-                </footer>
             </div>
+
+            <footer class="mt-8 mb-5">
+                <p class="text-sm text-center">
+                    Hery Sehastian &#169;2023 - Build with
+                    <a href="https://lume.land/">Lume</a>
+                </p>
+            </footer>
         </div>
+        <!-- <div class="lg:flex lg:items-center lg:justify-center lg:h-screen">
+        </div> -->
     </div>
 </body>
 
