@@ -1,9 +1,11 @@
 layout: layouts/main.njk
 social_media:
   - name: Linkedin
-    url: https://www.linkedin.com
-  - name: Facebook
-    url: https://www.facebook.com
+    url: https://www.linkedin.com/in/hery-sehastian-025a892b/
+  - name: Github
+    url: https://github.com/hsehastian
+  - name: Replit
+    url: https://replit.com/@herysehastian
 metas:
   site: hsehastian
   lang: en

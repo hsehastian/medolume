@@ -13,7 +13,15 @@ site.ignore("README.md");
 
 site.use(jsx())
     .use(tailwindcss({
-        extensions: [".html", ".jsx"]
+        extensions: [".html", ".jsx"],
+        options: {
+            theme: {
+                fontFamily: {
+                    sans: ["Graphik", "sans-serif"],
+                    serif: ["Merriweather", "serif"],
+                }
+            }
+        }
     }))
     .use(postcss())
     .use(minifyHTML());
